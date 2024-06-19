@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <form name="Form" method="post" action="main1.html" enctype="multipart/form-data" >
+        <fieldset>
+            <legend class="leg">Course details</legend>
+                <label>Course Name: </label>
+                <input type="text" id="title" required>
+                </br></br>
+                <label>Course Level: </label>
+                <input type="radio" name="level" value="1" required> Junior
+                <input type="radio" name="level" value="1" required> Senior
+        </fieldset>
+        </br></br></br>
+        <fieldset>
+            <legend class="leg">Homework details</legend>
+                <label>Homework Number</label>
+                </br>
+                <select id="HWN" required>
+                 <option disabled selected></option>
+                 <option value="1" >Homework#1</option>
+                 <option value="2" >Homework#2</option>
+                </select>
+                </br></br>
+                <label>Homework includes?</label>
+                </br>
+                <input type="checkbox" name="Hw-includes" value="html" > HTML<br/>
+                <input type="checkbox" name="Hw-includes" value="SS" > Style Sheets<br/>
+                <input type="checkbox" name="Hw-includes" value="js"> JavaScript</br>     
+                </fieldset>
+         </br></br></br>
+         <fieldset>
+            <legend class="leg">File submission</legend>
+                <label>File to be uploaded: </label>
+                <input type="file" name="fileToUpload" size="70" required>
+                </br></br>
+                <label>Conatct Email: </label>
+                <input type="email" id="Email" required>
+        </fieldset>
+        </br></br></br>
+         <input type="submit" class="button">
+         <input type="reset" class="button">
+    </form>
+</body>
+</html>
